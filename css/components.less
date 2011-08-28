@@ -1,0 +1,63 @@
+// Layout
+@page-width: 960px;
+@gutters: 0 20px;
+
+// Colors
+@linkColor: #8b59c2;
+@linkColorHover: darken(@linkColor, 10);
+@black: #000;
+@grayDark: lighten(@black, 25%);
+@gray: lighten(@black, 50%);
+@grayLight: lighten(@black, 70%);
+@grayLighter: lighten(@black, 90%);
+@white: #fff;
+@blue: #08b5fb;
+@green: #89b556;
+@red: #9d261d;
+@yellow: #ffc40d;
+@orange: #f89406;
+@pink: #c3325f;
+@purple: #7a43b6;
+
+// Fonts
+@sans-serif: "Helvetica Neue", Arial, Helvetica, sans-serif;
+@serif: "Georiga", Times, serif;
+@font-base: 100%;
+
+// Mixins
+.boxfix {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @alpha) {
+  @val: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @val;
+  -webkit-box-shadow: @val;
+  -moz-box-shadow: @val;
+  }
+  //.box-shadow(0, 0, 5px, 0.4);
+  
+.rounded-corners (@radius: 6px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  }
+  //.rounded-corners(10px);
+  //.rounded-corners;
+
+.transition(@transition: all linear .2s) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  transition: @transition;
+  }
+
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+.block {display:block;}
+.hide {display:none;}
+.first {border-left:none;}
+.last {border-right:none;}
