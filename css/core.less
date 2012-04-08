@@ -14,15 +14,6 @@ body {
   font-family: @sans-serif;
   font-size: @font-base;
   } 
-
-.align {
-  margin: 0 auto;
-  position: relative;
-  width: @page-width;
-  padding: @gutters;
-  .boxfix
-  }
-  
 /* S E L E C T O R S
 ----------------------------------------------- */
 a {color:@green;text-decoration:none;.transition;}
@@ -40,9 +31,6 @@ li {float:left; margin: 0 0 0 10px;}
 /* H E A D E R
 ----------------------------------------------- */
 header {
-  background: lighten(@black, 20%);
-  position: relative;
-  padding: 20px;
   }
 
 #logo {
@@ -58,7 +46,6 @@ header {
 ----------------------------------------------- */
 #content {
   color: @white;
-  background: lighten(@black, 40%);
   position:relative;
   margin-top: 40px;
   padding:20px;
@@ -68,11 +55,10 @@ header {
 /* F O O T E R
 ----------------------------------------------- */
 footer {
-  background: lighten(@black, 20%);
-  padding: 20px 0;
-  position: fixed;
   bottom: 0;
-  width:100%;
+  color: @watermark;
+  padding: 20px;
+  position: absolute;
   }
 
 /* C L E A R F I X
@@ -84,3 +70,14 @@ footer {
   visibility:hidden;
   display: block;
   }
+
+/* SLIDESHOW */
+#slideshow {
+  position: relative;
+}
+#slideshow div {
+}
+#slideshow div img {
+width: 100%;
+}
+
