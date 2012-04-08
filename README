@@ -1,3 +1,7 @@
+My changes to Ryan O'Rourke's Jumpstartr boiler plate.  I've added some mobile first methodologies
+
+From Ryan:
+
 Jumpstartr is meant to be a minimal library to pull down when you need to start codeing your next *small* project. It's not a full feature framework, nor will it ever be.
 
 It's configured to use less.js, which is a dynamic CSS processor so you can use variables, mixins, etc. On production sites you'll want to be sure to run less.js server side, not client side.
